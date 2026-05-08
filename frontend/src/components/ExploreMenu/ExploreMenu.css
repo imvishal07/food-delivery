@@ -1,0 +1,86 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-weight: 600;
+}
+
+.explore-menu-text {
+    max-width: 60%;
+    color: #808080;
+    line-height: 1.5;
+}
+
+/* 🔥 LIST CONTAINER */
+.explore-menu-list {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* 🔥 ITEM */
+.explore-menu-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    min-width: 90px;
+}
+
+/* 🔥 IMAGE FIX (MAIN) */
+.explore-menu-list-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;       /* 🔥 important */
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* 🔥 ACTIVE STATE */
+.explore-menu-list-item.selected img {
+    border: 3px solid #ff4c24;
+    padding: 2px;
+}
+
+/* 🔥 HOVER EFFECT */
+.explore-menu-list-item:hover img {
+    transform: scale(1.1);
+}
+
+/* TEXT */
+.explore-menu-list-item p {
+    margin-top: 8px;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* LINE */
+.explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #E2E2E2;
+    border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .explore-menu-list-item img {
+        width: 70px;
+        height: 70px;
+    }
+}

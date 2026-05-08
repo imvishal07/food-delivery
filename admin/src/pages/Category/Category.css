@@ -1,0 +1,178 @@
+.category-container{
+padding:30px 50px;
+width:100%;
+}
+
+.category-title{
+font-size:26px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.category-add{
+display:flex;
+gap:10px;
+margin-bottom:30px;
+}
+
+.category-add input{
+padding:10px 15px;
+border:1px solid #ddd;
+border-radius:6px;
+width:250px;
+font-size:14px;
+outline:none;
+}
+
+.category-add button{
+background:#000;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.category-add button:hover{
+background:#333;
+}
+
+.category-list{
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:350px;
+}
+
+.category-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 15px;
+border:1px solid #eee;
+border-radius:6px;
+background:#fafafa;
+}
+
+.category-item span{
+font-weight:500;
+}
+
+.category-item button{
+background:#ff4c24;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+font-size:13px;
+}
+
+.category-item button:hover{
+background:#e33e18;
+}
+.search-input {
+  margin-bottom: 15px;
+  padding: 8px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.category-item button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.category-container {
+  padding: 20px;
+}
+
+.category-title {
+  margin-bottom: 20px;
+}
+
+/* ADD SECTION */
+.category-add {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-add input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.category-add button {
+  padding: 8px 16px;
+  background: #ff4c24;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.category-add button:hover {
+  background: #e63e18;
+}
+
+/* LIST */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ITEM */
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.category-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-left img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}

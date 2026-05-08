@@ -1,0 +1,97 @@
+.orders-container {
+  padding: 20px;
+}
+
+/* 🔥 FILTER */
+.order-filter {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.order-filter select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* 🔥 ORDER CARD */
+.order-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+
+  border: 1px solid #eee;
+  border-left: 5px solid #ff4c24;
+
+  padding: 20px;
+  margin: 15px 0;
+
+  border-radius: 10px;
+  background: #fff;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* LEFT SECTION */
+.order-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TEXT */
+.order-item-food {
+  font-weight: 600;
+}
+
+.order-item-name {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.order-item-address {
+  margin: 5px 0;
+  color: #666;
+}
+
+.order-time {
+  font-size: 12px;
+  color: #999;
+}
+
+/* META */
+.order-meta {
+  font-weight: 500;
+}
+
+.price {
+  color: #ff4c24;
+  font-weight: 600;
+}
+
+/* STATUS SELECT */
+.order-item select {
+  background-color: #fff3ef;
+  border: 1px solid #ff4c24;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 900px) {
+  .order-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .order-meta {
+    font-size: 13px;
+  }
+
+  .order-item select {
+    width: 100%;
+  }
+}

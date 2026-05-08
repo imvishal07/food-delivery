@@ -1,0 +1,6 @@
+.env
+frontend/.env
+admin/.env
+backend/.env
+node_modules
+dist

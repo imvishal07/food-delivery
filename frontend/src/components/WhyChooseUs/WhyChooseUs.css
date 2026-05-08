@@ -1,0 +1,53 @@
+.why{
+    padding:60px 8vw;
+    text-align:center;
+}
+
+.why h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.why-subtitle{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.why-card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-5px);
+}
+
+.why-card h3{
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:#777;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+    .why-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .why-container{
+        grid-template-columns:1fr;
+    }
+}

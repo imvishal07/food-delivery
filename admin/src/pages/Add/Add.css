@@ -1,0 +1,92 @@
+.add{
+    width:70%;
+    margin:40px auto;
+    padding:30px;
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    color:#555;
+    font-size:15px;
+}
+
+/* form layout */
+
+.add form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* upload image */
+
+.add-img-upload{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.add-img-upload img{
+    width:120px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    padding:5px;
+}
+
+/* product name + description */
+
+.add-product-name,
+.add-product-description{
+    width:100%;
+    max-width:500px;
+}
+
+.add-product-name input,
+.add-product-description textarea{
+    width:100%;
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:14px;
+}
+
+.add-product-description textarea{
+    resize:none;
+    min-height:80px;
+}
+
+/* category + price row */
+
+.add-category-price{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.add-category-price select,
+.add-category-price input{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:14px;
+}
+
+/* button */
+
+.add-btn{
+    width:140px;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background:#ff4c24;
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.add-btn:hover{
+    background:#e23e17;
+}

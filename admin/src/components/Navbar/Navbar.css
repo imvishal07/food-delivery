@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,80px);
+}
+.navbar .profile{
+    width: 40px;
+}
+.navbar-right{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logout-btn{
+background:#ff4c24;
+border:none;
+color:white;
+padding:6px 14px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.logout-btn:hover{
+background:#e23c16;
+}

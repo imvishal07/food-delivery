@@ -1,0 +1,118 @@
+/* HERO SECTION */
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/hero.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* GRADIENT OVERLAY (better than dark layer) */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.7) 0%,
+        rgba(0,0,0,0.5) 40%,
+        rgba(0,0,0,0.2) 100%
+    );
+}
+
+/* CONTENT */
+.header-contents {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+    bottom: 12%;
+    left: 6vw;
+    animation: fadeIn 1.2s ease;
+}
+
+/* TITLE */
+.header-contents h2 {
+    font-weight: 700;
+    color: white;
+    font-size: max(4.5vw, 28px);
+    line-height: 1.2;
+}
+
+/* DESCRIPTION */
+.header-contents p {
+    color: #e5e5e5;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* BUTTON (UPGRADED) */
+.header-contents button {
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #ff4c24, #ff7a3d);
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 76, 36, 0.4);
+}
+
+/* BUTTON HOVER */
+.header-contents button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 76, 36, 0.6);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TABLET */
+@media (max-width:1050px) {
+    .header {
+        height: 40vw;
+    }
+
+    .header-contents {
+        max-width: 65%;
+    }
+}
+
+/* MOBILE */
+@media (max-width:750px) {
+
+    .header {
+        height: 65vw;
+    }
+
+    .header-contents {
+        max-width: 85%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents h2 {
+        font-size: 24px;
+    }
+
+    .header-contents button {
+        padding: 10px 20px;
+    }
+}
